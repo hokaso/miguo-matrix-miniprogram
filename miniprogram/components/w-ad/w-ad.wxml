@@ -1,0 +1,9 @@
+<!--miniprogram/components/w-ad/w-ad.wxml-->
+<official-account></official-account>
+<view class="ad_wrap">
+  <view class="ad_item">
+    
+      请点击上方「查看」按钮，进入「米果传媒」公众号主页获取红包及优惠信息~
+
+  </view>
+</view>

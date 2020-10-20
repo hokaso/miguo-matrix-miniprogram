@@ -1,0 +1,44 @@
+<!--miniprogram/pages/vote/vote.wxml-->
+<view class="all_votes">
+  <view class="presentation">
+    人气榜
+  </view>
+  <view class="rankings" wx:for="{{rankList}}" wx:key="index">
+    <!-- 图片容器 -->
+    <navigator url="../../pages/vote_detail/vote_detail?id={{item.id}}" class="rank_img">
+      <image src="{{item.groupPicHd}}" mode="widthFix"></image>
+    </navigator>
+    <!-- 描述 -->
+    <view class="rank_info">
+      <!-- 标题 -->
+      <view class="rank_title">
+        {{item.groupName}}
+      </view>
+      <!-- 票数相关 -->
+      <view class="rank_vote">
+        <!-- 分隔图标 -->
+        <view class="vote_icon_color">
+          <text class="fa fa-flag"></text>
+        <!-- 票数 -->
+          {{item.groupVotes}}
+        </view>
+      </view>
+    </view>
+    <view class="model">
+      <image wx:if="{{index==0}}" mode="widthFix" src="../../assets/images/tabbar/gold.png"></image>
+      <image wx:elif="{{index==1}}" mode="widthFix" src="../../assets/images/tabbar/silver.png"></image>
+      <image wx:elif="{{index==2}}" mode="widthFix" src="../../assets/images/tabbar/copper.png"></image>
+    </view>
+  </view>
+</view>
+<view class="vote">
+  <view class="presentation2">
+    你最想看的活动项目
+  </view>
+  <w-vote 
+    class="src"
+    votesList="{{votes}}"
+    nickName="{{nickName}}"
+    bind:eventListener="handleEventListener"
+  ></w-vote>
+</view>

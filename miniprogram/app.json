@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/promotion/promotion",
+    "pages/propaganda/propaganda",
+    "pages/vote/vote",
+    "pages/vote_detail/vote_detail",
+    
+    "components/w-recommend/w-recommend",
+    "components/w-vote/w-vote",
+    "components/w-note/w-note",
+    "components/w-swiper/w-swiper",
+    "components/w-ad/w-ad"
+    
+  ],
+  "window": {
+    "backgroundColor": "#b3d4db",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "米果时代",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#1E90FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "直播",
+        "iconPath": "/assets/images/tabbar/live.png",
+        "selectedIconPath": "/assets/images/tabbar/live_active.png"
+      },
+      {
+        "pagePath": "pages/vote/vote",
+        "text": "投票",
+        "iconPath": "/assets/images/tabbar/vote.png",
+        "selectedIconPath": "/assets/images/tabbar/vote_active.png"
+      },
+      {
+        "pagePath": "pages/propaganda/propaganda",
+        "text": "科普",
+        "iconPath": "/assets/images/tabbar/propaganda.png",
+        "selectedIconPath": "/assets/images/tabbar/propaganda_active.png"
+      },
+      {
+        "pagePath": "pages/promotion/promotion",
+        "text": "推广",
+        "iconPath": "/assets/images/tabbar/promotion.png",
+        "selectedIconPath": "/assets/images/tabbar/promotion_active.png"
+      }
+    ]
+  }
+}

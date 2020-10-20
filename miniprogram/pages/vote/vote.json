@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "w-vote": "/components/w-vote/w-vote"
+  }
+}

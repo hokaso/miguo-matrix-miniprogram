@@ -1,0 +1,24 @@
+<!--miniprogram/components/w-note/w-note.wxml-->
+<!-- 公告列表 -->
+<view class="note_wrap">
+  <!-- 公告组件 -->
+  <view class="note_item" wx:for="{{notesList}}" wx:key="index">
+    <!-- 公告标题 -->
+    <view class="note_title">
+      {{item.noteName}}
+    </view>
+     <!-- 公告时间 -->
+    <view class="note_time">
+      {{item.noteDisplayTime}}
+    </view>
+    <!-- 公告内容 -->
+    <view class="note_content">
+      <text>
+      {{item.noteDetails}}
+      </text>
+    </view>
+  </view>
+</view>
+
+
+

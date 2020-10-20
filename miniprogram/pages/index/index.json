@@ -1,0 +1,12 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "w-swiper": "/components/w-swiper/w-swiper",
+    "w-vote": "/components/w-vote/w-vote",
+    "w-note": "/components/w-note/w-note",
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index",
+    "chatroom": "/components/chatroom/chatroom",
+    "w-recommend": "/components/w-recommend/w-recommend"
+  }
+}

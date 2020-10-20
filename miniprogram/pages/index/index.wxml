@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view class='content' 
+              scroll-y 
+              bindscrolltolower="loadMore"
+              scroll-with-animation="true"
+              scroll-top="{{topPosition}}"
+              bindscroll="scrollPosition">
+    <w-swiper images="{{banners}}"/>
+    <!-- <txv-video vid="h3019qbsbuc" playerid="txv1"></txv-video> -->
+    <view class="section">
+      <!-- <image src="../../images/generic_countdown.png" mode="widthFix" style="width:100%;"></image> -->
+      <video id="myVideo" src="{{activityLive}}" class="video_src" controls></video>
+    </view>
+
+    <navigator wx:if="{{activityAd}}" url="../../components/w-ad/w-ad">
+        <image src="../../images/Light_Red_Pot.jpg" mode="widthFix" style="width:100%;"></image>
+    </navigator>
+    
+
+    <w-recommend recommends="{{recommends}}" />
+    <i-tabs current="{{current}}" color="#f759ab" bindchange="switchPage">
+      <i-tab key="1" title="投票"></i-tab>
+      <i-tab key="2" title="公告栏"></i-tab>
+    </i-tabs>
+    <view wx:if="{{tab1}}" class='tab1'>
+      <w-vote 
+        class="src"
+        votesList="{{votes}}"
+        openid="{{getOpenID}}"
+        bind:eventListener="handleEventListener"
+      ></w-vote>
+
+      <!-- <view class="container">
+        <chatroom
+          style="width: 100%; height: 500rpx"
+          envId="{{chatRoomEnvId}}"
+          collection="{{chatRoomCollection}}"
+          groupId="{{chatRoomGroupId}}"
+          userInfo="{{userInfo}}"
+          onGetUserInfo="{{onGetUserInfo}}"
+          getOpenID="{{getOpenID}}"
+        ></chatroom>
+      </view> -->
+      
+    </view>
+    <view wx:if="{{tab2}}" class='tab2'>
+      <w-note
+        class="src"
+        notesList="{{notes}}"
+      ></w-note>
+    </view>
+  </scroll-view> 
+</view>

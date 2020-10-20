@@ -1,0 +1,18 @@
+/* miniprogram/components/w-ad/w-ad.wxss */
+.ad_wrap{
+  background-image: url("https://migotimes.com/file/mp/bg.jpg");
+  
+}
+
+.ad_item{
+  align-items: center;
+  margin: 100rpx;
+  padding: 50rpx;
+  background-color: rgba(163, 225, 255, 0.8);
+  border-radius: 10rpx;
+  /* border-width:3rpx; */
+  /* border-color:rgb(255, 188, 219); */
+  /* border-style:solid; */
+  color:rgb(85, 85, 85);
+  line-height: 50rpx;
+}

@@ -1,0 +1,42 @@
+/* miniprogram/components/w-note/w-note.wxss */
+
+.note_wrap{
+  /* background: linear-gradient(#86ddff,rgb(130, 235, 229)); */
+  
+  background-image: url("https://migotimes.com/file/mp/bg.png");
+  box-shadow:0 0 10px 20px rgba(255, 255, 255, 0.438) inset;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding: 30rpx;
+}
+
+.note_item{
+  background-color: rgba(177, 237, 255, 0.4);
+  
+  border-bottom: 2px solid rgba(169, 210, 255, 0.795);
+}
+.note_time{
+  font-size: 12px;
+  color: rgba(97, 97, 97, 0.952);
+  text-align: center;
+  padding-top:10rpx;
+}
+.note_title{
+  text-align: center;
+  padding: 50rpx 0 0 0;
+  font-size: 120%;
+  color: rgba(75, 75, 75, 0.973);
+}
+
+.note_content{
+  padding: 0rpx 60rpx 60rpx 60rpx;
+  color: rgba(75, 75, 75, 0.973);
+  margin-top: -30rpx;
+  line-height: 50rpx;
+}

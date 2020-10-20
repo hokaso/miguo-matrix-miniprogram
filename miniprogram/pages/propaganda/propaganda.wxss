@@ -1,0 +1,40 @@
+/* miniprogram/pages/propaganda/propaganda.wxss */
+.note_wrap{
+  padding: 70rpx;
+}
+
+.note_item{
+  padding: 30rpx;
+  /* width: 100%;   */
+  background-color: rgba(163, 225, 255, 0.8);
+  border: 1px solid rgb(255, 167, 167);
+  border-radius:5%;
+  color: rgb(66, 66, 66);
+}
+
+.note_title{
+  text-align: center;
+  padding: 0rpx 0 0 0;
+  font-size: 120%;
+  margin-top: -12rpx;
+
+}
+
+.note_content{
+  padding: 0rpx 0rpx 40rpx 20rpx;
+  line-height: 50rpx;
+}
+
+.container {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 0rpx;
+  padding-bottom: 0rpx;
+}
+
+.tab{
+  width: 100%;
+}

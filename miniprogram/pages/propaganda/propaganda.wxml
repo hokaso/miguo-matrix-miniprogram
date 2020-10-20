@@ -1,0 +1,33 @@
+<!--miniprogram/pages/propaganda/propaganda.wxml-->
+<!-- 科普列表 -->
+<view class="container">
+  <i-tabs class="tab" current="{{current}}" color="#f759ab" bindchange="switchPage">
+    <i-tab key="1" title="活动简介"></i-tab>
+    <i-tab key="2" title="活动流程"></i-tab>
+  </i-tabs>
+  <view wx:if="{{tab1}}" class='tab1'>
+    <view class="note_wrap">
+      <!-- 科普组件 -->
+      <view class="note_item">
+        <!-- 科普标题 -->
+        <view class="note_title">
+          <text>
+            活动宗旨
+          </text>
+        </view>
+        <!-- 科普内容 -->
+        <view class="note_content">
+          <text>
+            {{activityProfile}}
+          </text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{tab2}}" class='tab2'>
+    <w-note
+        class="src"
+        notesList="{{notes}}"
+    ></w-note>
+  </view>
+</view>

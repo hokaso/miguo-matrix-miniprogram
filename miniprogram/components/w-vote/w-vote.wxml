@@ -1,0 +1,35 @@
+<!--miniprogram/components/w-vote/w-vote.wxml-->
+<!-- 投票对象列表 -->
+<view class="vote_wrap">
+  <!-- 投票组件 -->
+  <view class="vote_item" wx:for="{{votesList}}" wx:key="index">
+    <!-- 图片容器 -->
+    <navigator url="../../pages/vote_detail/vote_detail?id={{item.id}}">
+      <view class="vote_img">
+        <image src="{{item.groupPicHd}}" mode="widthFix"></image>
+      </view>
+    
+    <!-- 描述 -->
+    <view class="vote_info">
+      <!-- 标题 -->
+      <view class="vote_title">
+        {{item.groupName}}
+      </view>
+      <!-- 分隔图标 -->
+      <view class="vote_icon_color">
+        <text class="fa fa-flag"></text>
+      </view>
+      <!-- 票数 -->
+      <view class="vote_count">
+        {{item.groupVotes}}
+      </view>
+    </view>
+    </navigator>
+    <!-- 投票按钮 -->
+    <view class="vote_btn">
+      <button wx:if="{{hasAuthorize}}" bindtap="addVote" class='btn' hover-class='hover-btn' id="{{item.id}}" openid="{{openid}}" size="mini">投票</button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='btn' hover-class='hover-btn' id="{{item.id}}" size="mini">授权</button>
+    </view>
+    
+  </view>
+</view>

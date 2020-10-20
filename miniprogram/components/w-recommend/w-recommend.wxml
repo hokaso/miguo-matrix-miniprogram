@@ -1,0 +1,7 @@
+<!--components/w-recommend/w-recommend.wxml-->
+<navigator url="../../pages/promotion/promotion" open-type='switchTab' class='recommend'>
+  <view class='recommend-item' wx:for="{{recommends}}" wx:key="index">
+      <image src="{{item.merchantLogo}}" mode="widthFix" />
+      <view class="font"><text>{{item.merchantName}}</text></view>
+  </view>
+</navigator>

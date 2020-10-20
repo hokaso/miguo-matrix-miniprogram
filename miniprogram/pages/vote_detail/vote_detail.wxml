@@ -1,0 +1,22 @@
+<!--miniprogram/pages/vote_detail/vote_detail.wxml-->
+<view class="container">
+  <image src="{{groupPicHd}}" mode="widthFix" style="width:100%"></image>
+  <view class='info'>
+    
+    <view class="title">
+      {{groupName}}
+    </view>
+    <view class="profile">
+      {{groupProfile}}
+    </view>
+  </view>
+  <view class="guide">
+      <view class="share_text">
+        <text>
+          点击右侧按钮转发拉票\n投票请返回上一级
+        </text>
+      </view>
+      
+      <button class="share" open-type='share' plain='true' hover-class="share_active"></button>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+<!--miniprogram/pages/promotion/promotion.wxml-->
+<view class="container">
+  <view class="merchant_list">
+    <view class="each_merchant" wx:for="{{merchant}}" wx:key="index">
+      <view class="pic">
+        <image src="{{item.merchantLogo}}" mode="widthFix"></image>
+      </view>
+      <view class="merchant_info">
+        <view class="merchant_name">
+          <text>
+            {{item.merchantName}}
+          </text>
+        </view>
+        <view class="merchant_introduction">
+          <text>
+            {{item.merchantInfo}}
+          </text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

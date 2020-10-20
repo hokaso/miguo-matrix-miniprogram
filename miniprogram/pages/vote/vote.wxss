@@ -1,0 +1,93 @@
+/* miniprogram/pages/vote/vote.wxss */
+.all_votes{
+  align-content: stretch;
+  padding: 30rpx;
+  align-items: center;
+}
+
+.rankings{
+  background-color: rgba(163, 225, 255, 0.3);
+  /* position: relative; */
+  display: block;
+  overflow: hidden;
+  align-items: center;
+  margin: 30rpx;
+  width: 90%;
+  border: 1rpx solid rgb(255, 188, 219);
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+}
+
+.presentation{
+  margin: 60rpx;
+  background-color: rgba(163, 225, 255, 0.8);
+  border: 1rpx solid rgb(255, 188, 219);
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  text-align: center;
+  padding: 20rpx;
+  font-size: 120%;
+  color: rgb(66, 66, 66);
+}
+
+.presentation2{
+  margin: 60rpx;
+  margin-bottom: 12rpx;
+  background-color: rgba(163, 225, 255, 0.8);
+  border: 1rpx solid rgb(255, 188, 219);
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  text-align: center;
+  padding: 20rpx;
+  font-size: 120%;
+  color: rgb(66, 66, 66);
+}
+
+.rank_title{
+  padding-top: 3px;
+  font-size: 70%;
+  color: rgb(75, 75, 75);
+}
+
+.rank_img{
+}
+
+.rank_info{
+  display: block;
+  float: left;
+  padding: 3% 0 3% 0;
+}
+
+.rank_vote{
+  /* position: absolute; */
+  /* vertical-align: top; */
+  /* margin-right: 10rpx; */
+  padding-top: 3px;
+  margin-left: 1px;
+}
+
+
+.rank_img image{
+  display: block;
+  float: left;
+  /* overflow: hidden; */
+  width: 120px;
+  /* background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat; */
+  margin-right: 5%;
+}
+
+.model image{
+  display: block;
+  float: right;
+  width: 30px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+
+.vote{
+  margin-top: -6%;
+}
+
+.vote_icon_color{
+  color: rgb(255, 110, 110);
+}
